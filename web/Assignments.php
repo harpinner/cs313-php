@@ -19,19 +19,14 @@ print_r( $dirs);
     <title>Assignments</title>
 </head>
 <body>
-    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav><div id="the_date"><h4>The Current Time</h4> <span><?php echo date("l m d Y h:i:sa")  ?></span></div></header>
+    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav><div id="the_date"><h4>The Current Time</h4> <span><?php echo date("l m d Y h:i:sa")  ?>ssss</span></div></header>
 
     <div id="contain">
     <section id="sidebar_1">
         <ul>
-            <?php  ?>
-            <li> item 1 </li>
-            <li> item 1 </li>
-            <li> item 1 </li>
-            <li> item 1 </li>
-            <li> item 1 </li>
-            <li> item 1 </li>
-            <li>item 1 </li>
+            <?php foreach(glob('Assignment*') as $work):  ?>
+            <li> <a href="<?php echo $work ?>"><?php echo $work ?></a></li>
+            <?php endforeach; ?>
         </ul>
     </section>
     <Article id="MainStuff">
