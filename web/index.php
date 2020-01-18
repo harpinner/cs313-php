@@ -8,7 +8,7 @@
     <title>MyHome</title>
 </head>
 <body>
-    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav></header>
+    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav><div id="the_date"><h4>The Current Time</h4> <span><?php echo date("l m d Y h:i:sa")  ?></span></div></header>
 
     <div id="contain">
     <section id="sidebar_1">
@@ -28,7 +28,7 @@
    <div><h3>Robots</h3><p>Mechanical marvels that con do so much while taking your job</p></div>
    <div><h3>Robots</h3><p>Mechanical marvels that con do so much while taking your job</p></div>
    <div><h3>Robots</h3><p>Mechanical marvels that con do so much while taking your job</p></div>
-   
+   <div><img src="Sumdac_Systems.PNG" width="150" height="150" ></div> 
 
 
 

@@ -1,13 +1,21 @@
 
 <?php 
 
-$files1 = scandir($dir);
+$files1 = scandir(".");
 $files2 = array();
-foreach ($dir as $result) {
+foreach ($files1 as $result) {
     
 
-    if (is_dir($result)) {
-        array_push($files2, $result);
+    if (is_dir($result) ) 
+    {
+        if($result == '.' || $result == '..')
+        {
+
+        }
+        else
+        {
+            array_push($files2, $result);
+        }
     }
 }
 
@@ -24,7 +32,7 @@ foreach ($dir as $result) {
     <title>Assignments</title>
 </head>
 <body>
-    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav><div id="the_date"><h4>The Current Time</h4> <span><?php echo date("l m d Y h:i:sa")  ?>ssss</span></div></header>
+    <header><h1>Mysite</h1><nav><ul id="top_menu"><li>Games</li> <li>Email</li> <li>Forums</li><li>Stories</li><li>Music</li><li>Technology</li><li>News</li></ul></nav><div id="the_date"><h4>The Current Time</h4> <span><?php echo date("l m d Y h:i:sa")  ?></span></div></header>
 
     <div id="contain">
     <section id="sidebar_1">
