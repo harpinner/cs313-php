@@ -1,12 +1,17 @@
-<?php  
 
-$dirs = array_filter(glob('*'), 'is_dir');
-print_r( $dirs);
+<?php 
+
+$files1 = scandir($dir);
+$files2 = array();
+foreach ($dir as $result) {
+    
+
+    if (is_dir($result)) {
+        array_push($files2, $result);
+    }
+}
 
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -24,7 +29,7 @@ print_r( $dirs);
     <div id="contain">
     <section id="sidebar_1">
         <ul>
-            <?php foreach(glob('Assignment*') as $work):  ?>
+            <?php foreach($files2 as $work):  ?>
             <li> <a href="<?php echo $work ?>"><?php echo $work ?></a></li>
             <?php endforeach; ?>
         </ul>
