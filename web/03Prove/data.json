@@ -1,0 +1,118 @@
+{
+    "toys": [
+      {
+        "name": "Transformers Cliffjumper Roleplay Shotgun Axe",
+        "price": 49.7,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Transformers Nerf Cliffjumper Scatter Blaster",
+        "price": 29.25,
+        "description": "This is a dummy Description",
+        "type": "NerfGun"
+      },
+      {
+        "name": "Transformers Rolepley Triple Barreled Ion Cannons",
+        "price": 14.77,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Transformers Roleplay Neutron Assault Rifle",
+        "price": 14.77,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Transformers Nerf Cliffjumper Bazooka",
+        "price": 29.99,
+        "description": "This is a dummy Description",
+        "type": "NerfGun"
+      },
+      {
+        "name": "Transformers Roleplay Nucleon Charge Rifle",
+        "price": 14.77,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Transformers Nerf Soldier Hammer",
+        "price": 5.99,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Transformers Nerf Cliff Bee Energy Guns",
+        "price": 13.99,
+        "description": "This is a dummy Description",
+        "type": "NerfGun"
+      },
+      {
+        "name": "Role Play Helmet",
+        "price": 49.99,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Deluxe Cliffjumper toy",
+        "price": 39.45,
+        "description": "This is a dummy Description",
+        "type": "ActionFigure"
+      },
+      {
+        "name": "Megaman Cliffjumper Biomaster",
+        "price": 10.99,
+        "description": "This is a dummy Description",
+        "type": "ActionFigure"
+      },
+      {
+        "name": "Deluxe Biometal Model Cliffjumper Toy",
+        "price": 49.99,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Nerf Elite Tornado Cannon",
+        "price": 99.99,
+        "description": "This is a dummy Description",
+        "type": "NerfGun"
+      },
+      {
+        "name": "Nerf Magnetar pulse blaster",
+        "price": 55.99,
+        "description": "A Huge Nerf Blaster with A detachable Nerf Foam Sword",
+        "type": "NerfGun"
+      },
+      {
+        "name": "Dread Assault Cannon",
+        "price": 99.99,
+        "description": "A toy Plastic Chainsaw-Axe with a missile launcher that combine to form the Dread Assault Cannon with Lights and Sounds",
+        "type": "Roleplay"
+      },
+      {
+        "name": "Deluxe Skyquake Toy",
+        "price": 39.45,
+        "description": "This is a dummy Description",
+        "type": "ActionFigure"
+      },
+      {
+        "name": "Megaman Skyquke Figure",
+        "price": 15.95,
+        "description": "This is a dummy Description",
+        "type": "ActionFigure"
+      },
+      {
+        "name": "Megaman Skyquke Biomaster",
+        "price": 10.99,
+        "description": "This is a dummy Description",
+        "type": "ActionFigure"
+      },
+      {
+        "name": "Orbital Pistol",
+        "price": 14.77,
+        "description": "This is a dummy Description",
+        "type": "Roleplay"
+      }
+    ]
+  }

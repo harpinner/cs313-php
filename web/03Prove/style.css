@@ -1,0 +1,23 @@
+#itemGrid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:  repeat(5, 250px);
+}
+
+
+
+.storeItem{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+}
+
+.storeItem:hover{
+    background-color:green;
+    
+}
+.storeItem:active
+{
+    background-color: chartreuse;
+}
