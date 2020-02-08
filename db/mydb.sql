@@ -1,7 +1,8 @@
 CREATE TABLE users(
    id  SERIAL PRIMARY KEY,
    username    varchar(80),
-   email       varchar(80)
+   email       varchar(80),
+   pass_word varchar(80)
 );
 
 
@@ -34,7 +35,7 @@ CREATE TABLE stories(
 
 CREATE TABLE timelines(
    id  SERIAL PRIMARY KEY,
-   universe_id int references users(id),
+   universe_id int references universes(id),
    creation_date timestamp default current_timestamp
 );
 
@@ -103,6 +104,10 @@ CREATE TABLE timeline_contradictions(
 	timeline_id int references timelines(id),
 	contradiction_id int references contradictions(id)
 );
+
+
+
+
 
 
 
