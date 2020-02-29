@@ -116,9 +116,11 @@ $dataRow['order_num'] = '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe Editor   ?></title>
+    <link rel="stylesheet" href="theStyle.css">
 </head>
 <body>
-<h1> the universe</h1>
+    <header><h1> the universe</h1></header>
+
         <form action="" method="post">
         <table>
         <input type="hidden" name="id" value="<?php echo $universeDisplay->id; ?>">
@@ -150,5 +152,11 @@ $dataRow['order_num'] = '';
         </form>
         <?php endforeach; ?>
         <?php endif; ?>
+        <footer>
+        <ul id="bottom_menu">
+            <li> <a href="index.php?logout=true">Log Out</a>  </li>
+            <li> <a href="dashboard.php">Back to the Dashboard</a> </li>
+        </ul>
+    </footer>
 </body>
 </html>

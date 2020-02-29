@@ -15,13 +15,13 @@
         $qry2 = "WHERE creator = :id";
         $vars  = array('id' => $_SESSION['id']);
         
-        echo var_dump($_SESSION);
+        //echo var_dump($_SESSION);
         echo '<BR>';
         $stories = $model->selectQuery($qry,$vars,true,'story');
         $universes = $model->selectQuery($qry2,$vars,true,'universe');
         $characters = $model->selectQuery($qry2,$vars,true,'character');
         
-        echo var_dump($stories);
+        //echo var_dump($stories);
         echo '<BR>';
 
 
@@ -37,10 +37,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="theStyle.css">
 </head>
 <body>
 <header><h1> Welcome   <?php  echo $_SESSION['username'];  ?></h1></header>
-
+<div id="contain">
+<div id="sidebar_1">
+<h2>Your Characters</h2>
+<ul>
+<?php foreach ($characters as $karach):?>
+  <li><a href="character.php?id=<?php echo $karach->id; ?>"><?php echo $karach->name;?></a></li>
+<?php endforeach; ?>
+<li><a href="character.php?id=new">Create New Character</a></li>
+</ul>
+</div>
+<Article id="MainStuff">
 <h2>Your Universes</h2>
 <p>   <table>
     <tr>
@@ -58,14 +69,7 @@
     <tr><td><a href="universe.php?id=new">Create New Universe</a></td></tr>
     </table>
     </p>
-
-<h2>Your Characters</h2>
-<ul>
-<?php foreach ($characters as $karach):?>
-  <li><a href="character.php?id=<?php echo $karach->id; ?>"><?php echo $karach->name;?></a></li>
-<?php endforeach; ?>
-<li><a href="character.php?id=new">Create New Character</a></li>
-</ul>
+    
 <h2>Your Stories</h2>
     <table>
     <tr>
@@ -83,6 +87,14 @@
     <tr><td><a href="story.php?id=new">Create new story</a></td></tr>
     </table>
     
+    </Article></div>
+    
+    <footer>
+        <ul id="bottom_menu">
+            <li> <a href="index.php?logout=true">Log Out</a>  </li>
+            <li> Back to the Dashboard </li>
+        </ul>
+    </footer>
 
     
 </body>

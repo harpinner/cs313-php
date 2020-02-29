@@ -181,6 +181,6 @@
     </table>
     <?php endif; ?>
 
-    <?php echo var_dump($periods); ?>
+ 
 </body>
 </html>

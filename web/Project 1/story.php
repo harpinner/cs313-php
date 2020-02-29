@@ -115,6 +115,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Story Editor</title>
+    <link rel="stylesheet" href="theStyle.css">
 </head>
 <body>
     <header><h1>Story Editor</h1></header>
@@ -180,7 +181,12 @@
     <?php endforeach; ?>
     </table>
     <?php endif; ?>
-
-    <?php echo var_dump($periods); ?>
+    <footer>
+        <ul id="bottom_menu">
+            <li> <a href="index.php?logout=true">Log Out</a>  </li>
+            <li> <a href="dashboard.php">Back to the Dashboard</a> </li>
+        </ul>
+    </footer>
+ 
 </body>
 </html>

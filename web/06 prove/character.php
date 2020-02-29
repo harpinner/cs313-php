@@ -25,12 +25,12 @@ if (isset($_POST['submit_tn'])) {
         $varss[':creator'] = $_POST['author'];
         $proof = $model->intanQuery(character::insertQuery,$varss,true,'characters'); 
         $_GET['id'] = $proof;
-        echo var_dump($proof);
+        //echo var_dump($proof); test statement
         
     } else {
         $varss[':id'] = $_POST['id'];
         $proof = $model->intanQuery(character::updateQuery,$varss);
-        echo var_dump($proof);
+        //echo var_dump($proof); test statement
     }
     
     # code...

@@ -303,7 +303,7 @@
 
         }
 
-        public function delQuery( $table,$id)
+        public function delQuery($table,$id)
         {
             $stmt = $this->db->prepare('DELETE FROM '.$table.' WHERE id = :id');
 

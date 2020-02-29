@@ -11,7 +11,7 @@ else {
 }
 if (isset($_POST['submit_tn'])) {
     # code...
-    echo $_POST['submit_tn'];
+    //echo $_POST['submit_tn']; test statement
 }
 
  $model = new datalayer(); 
@@ -25,12 +25,12 @@ if (isset($_POST['submit_tn'])) {
         $varss[':creator'] = $_POST['author'];
         $proof = $model->intanQuery(character::insertQuery,$varss,true,'characters'); 
         $_GET['id'] = $proof;
-        echo var_dump($proof);
+        //echo var_dump($proof); test statement
         
     } else {
         $varss[':id'] = $_POST['id'];
         $proof = $model->intanQuery(character::updateQuery,$varss);
-        echo var_dump($proof);
+        //echo var_dump($proof); test statement
     }
     
     # code...
@@ -68,18 +68,31 @@ if (isset($_POST['submit_tn'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaacter Editor</title>
+    <link rel="stylesheet" href="theStyle.css">
 </head>
 <body>
 <header><h1>Character Editor</h1></header>
-    <form action="" method="post">
+<div id="contain">
+    <article id="MainStuff">
+        <form action="" method="post">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
     <input type="hidden" name="author" value="<?php echo $_SESSION['id']; ?>">
-    Character Name: <input type="text" name="name" id="" value="<?php echo $characterDisplay->name; ?>">
-    Character Detials: <BR> <textarea name="details" id="" cols="30" rows="10"><?php echo $characterDisplay->details; ?></textarea>
-    <BR> <input type="submit" name="submit_tn" value="Save"><input type="submit" name="submit_tn" value="Delete">
+        <table>
+            <tr> <td>Character Name:</td><td><input type="text" name="name" id="" value="<?php echo $characterDisplay->name; ?>"></td></tr>
+            <tr><td>Character Detials:</td><td><textarea name="details" id="" cols="30" rows="10"><?php echo $characterDisplay->details; ?></textarea></td></tr>
+            <tr><td><input type="submit" name="submit_tn" value="Save"></td><td><input type="submit" name="submit_tn" value="Delete"></td></tr>
     
+      
+     
+    
+   
     </table>
-    
-    </form>
+    </form></article></div>
+    <footer>
+        <ul id="bottom_menu">
+            <li> <a href="index.php?logout=true">Log Out</a>  </li>
+            <li> <a href="dashboard.php">Back to the Dashboard</a> </li>
+        </ul>
+    </footer>
 </body>
 </html>
